@@ -102,40 +102,4 @@ window.addEventListener("scroll", () => {
     
 });
 
-// for responsive navbar 
-
-let icon = document.createElement("i"),
-  anchorForIcon = document.createElement("a");
-  anchorForIcon.appendChild(icon);
-  list.appendChild(anchorForIcon);
-
-function dynamicWidth(){
-  if(Body.clientWidth < 768)
-  {
-    icon.classList.add("fas","fa-bars");
-
-  }else{
-    icon.classList.remove("fas","fa-bars");
-
-  }
-}
-setInterval(dynamicWidth,1000);
-
-// icon.addEventListener("click", sideMenu);
-
-// function sideMenu() {
-//     icon.classList.toggle("active");
-//     list.classList.toggle("active");
-// }
-
-// anchors.forEach(n => n.addEventListener("click", closeMenu));
-
-// function closeMenu() {
-//     icon.classList.remove("active");
-//     list.classList.remove("active");
-// }
-
-
-
-
 
