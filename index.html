@@ -1,0 +1,181 @@
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="udacity, courses , nanodegree , web development">
+    <meta name="description" content="landing page">
+    <meta name="author" content="Nourhan Nabil">
+    <title>Manipulating the DOM</title>
+    <!-- Load Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
+      rel="stylesheet"
+    />
+        <!-- Load  FontAwsome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Load Styles -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+    <header class="page__header">
+      <nav class="navbar__menu">
+        <!-- Navigation starts as empty UL that will be populated with JS -->
+        <ul class="mobile-menu " id="navbar__list"></ul>
+      </nav>
+    </header>
+    <main>
+      <header class="main__hero" id="heading">
+        <h1 >Landing Page</h1>
+      </header>
+      <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+      <section class="hide" id="About-Us" data-nav="About Us" class="your-active-class" >
+        <div class="landing__container">
+          <h2>About Us</h2>
+          <p>
+            Udacity, Inc. is an American for-profit educational organization
+            founded by Sebastian Thrun, David Stavens, and Mike Sokolsky
+            offering massive open online courses. According to Thrun, the origin
+            of the name Udacity comes from the company's desire to be "audacious
+            for you, the student". While it originally focused on offering
+            university-style courses, it now focuses more on vocational courses
+            for professionals.
+          </p>
+        </div>
+        <div class="photo"><img src="imgs/About.jpg" alt="About" /></div>
+      </section>
+      <section class="hide" id="Our-Mission" data-nav="Our Mission">
+        <div class="photo">
+          <img src="imgs/Our Mission.jpg" alt="Our Mission" />
+        </div>
+        <div class="landing__container">
+          <h2> Our Mission</h2>
+          <p>
+            Our mission is to train the world’s workforce in the careers of the
+            future. We partner with leading technology companies to learn how
+            technology is transforming industries, and teach the critical tech
+            skills that companies are looking for in their workforce. With our
+            powerful and flexible digital education platform, even the busiest
+            learners can prepare themselves to take on the most in-demand tech
+            roles.
+          </p>
+        </div>
+      </section>
+      <section class="hide" id="Nanodegree" data-nav="Nanodegree">
+        <div class="landing__container">
+          <h2>Nanodegree</h2>
+          <p>
+            In June 2014, Udacity and AT&T announced the "Nanodegree" program,
+            designed to teach programming skills needed to qualify for an
+            entry-level IT position at AT&T. The coursework is said to take less
+            than a year to complete, and cost about US$200/month. AT&T said it
+            will offer paid internships to some graduates of the program.“We
+            can not turn you into a Nobel laureate,” Mr. Thrun said to a learner.
+            “But what we can do is something like upskilling — you are a smart
+            person, but the skills you have are inadequate for the current job
+            market, or do not let you get the job you aspire to have. We can help
+            you get those skills.” A cybersecurity nanodegree was announced at
+            the RSA Conference in April 2018.
+          </p>
+        </div>
+        <div class="photo">
+          <img src="imgs/NanoDegree.jpg" alt="Nanodegree" />
+        </div>
+      </section>
+      <section class="hide" id="Enrollment" data-nav="Enrollment">
+        <div class="photo">
+          <img src="imgs/Enrollment.jpg" alt="Enrollment" />
+        </div>
+        <div class="landing__container">
+          <h2>Enrollment</h2>
+          <p>
+            Over the first several months of Udacity's existence, enrollment for
+            each class was cut off on the due date of the first homework
+            assignment, and the courses were re-offered each hexamester. Since
+            August 2012, all courses have been "open enrollment"; students can
+            enroll in one or more courses at any time after a course is
+            launched. All course lectures and problem sets are available upon
+            enrollment and can then be completed at the student's preferred
+            pace.
+          </p>
+        </div>
+        
+      </section>
+      <section class="hide" id="Certification" data-nav="Certification">
+        <div class="landing__container">
+          <h2>Certification</h2>
+          <p>
+            Udacity used to issue certificates of completion of individual
+            courses, but since May 2014 has stopped offering free
+            non-identity-verified certificates. In addition, beginning 24 August
+            2012, through partnership with electronic testing company Pearson
+            VUE, students of CS101 can elect to take an additional proctored
+            75-minute final exam for a fee of $89 in an effort to allow Udacity
+            classes to "count towards a credential that is recognized by
+            employers" Further plans announced for certification options would
+            include a "secured online examination" as a less expensive
+            alternative to the in-person proctored exams.
+          </p>
+        </div>
+        <div class="photo">
+          <img src="imgs/certifications.jpg" alt="Certification" />
+        </div>
+      </section>
+    <a class="top-icon"> <i class="fas fa-arrow-circle-up"></i></a>
+     
+    </main>
+   <!-- start of footer  -->
+   <footer class="page__footer">
+    <div>
+      <p>All copyrights reserved to &copy; 2011–2021 Udacity, Inc.</p>
+      <p>
+        References: from
+        <a href="https://en.wikipedia.org/wiki/Udacity" target="_blank">
+          Wikipedia</a
+        >
+        , the free encyclopedia
+      </p>
+    </div>
+    <ul>
+      <li>
+        <a
+          href="https://web.facebook.com/UdacityEgypt/?brand_redir=174179219354091"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/udacity" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/udacity" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/udacity/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </li>
+    </ul>
+  </footer>
+  <!-- end of footer  -->
+   <script
+      src="https://kit.fontawesome.com/506e36437b.js"
+      crossorigin="anonymous"
+    ></script>
+   <script src="js/app.js"></script>
+  </body>
+</html>
+ 
