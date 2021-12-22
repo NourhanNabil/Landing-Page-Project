@@ -3,12 +3,12 @@
 ## Table of Contents
 * [Project Title](#LandingPageProject)
 * [Table Of Contents](#TableofContents)
-* [Heading Section](#HeadingSection)
+* [Header Section](#HeaderSection)
 * [Main Section](#MainSection)
 * [Footer Section](#FooterSection)
 * [Links Used](#linksUsed)
 
-## Heading Section
+## Header Section
 The Heading section shows the navigation bar containing anchor links related to each section's header that has been created by manipulating the DOM using `JavaScript`.
 
 The navigation bar is dynamic evey time a section is added the section's header is being added to the navigation bar automatically.  
